@@ -1,0 +1,38 @@
+body {
+    background-color: yellow;
+}
+div {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body {
+        background-color: red;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        background-color: pink;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1000px) {
+    body {
+        background-color: blue;
+    }
+}

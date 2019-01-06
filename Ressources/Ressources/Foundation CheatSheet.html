@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://sudheerdev.github.io/Foundation5CheatSheet/ -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="description" content="Cheatsheet for foundation5 - The most advanced responsive front-end framework in the world. This is the latest version of cheatsheet!">
+  <meta name="keywords" content="foundation, zurb, cheat sheet, cheat, code, help, copy paste, learn, great cheat sheet, copy and paste">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation CheatSheet</title>
+  <link rel="shortcut icon" type="image/ico" href="http://sudheerdev.github.io/Foundation5CheatSheet/img/favicon.ico">
+  <link rel="stylesheet" href="./Foundation CheatSheet_files/normalize.css">
+  <link rel="stylesheet" href="./Foundation CheatSheet_files/foundation.css">
+  <link rel="stylesheet" href="./Foundation CheatSheet_files/cheatsheet.css">
+  <script src="./Foundation CheatSheet_files/modernizr.js"></script><style type="text/css"></style>
+<meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"></head>
+
+<body data-pinterest-extension-installed="cr1.39.1">
+  <!--header-->
+  <div class="row collapse cover fullwidth">
+    <div class="small-8 medium-6 columns">
+      <h2>Foundation-5<small> Cheat sheet</small></h2>
+      <span class="fork"><a href="https://github.com/sudheerDev/CheatSheet" target="_blank">Fork me on github</a><img class="git" src="./Foundation CheatSheet_files/github.png"></span>
+
+    </div>
+
+    <div class="small-4 medium-6 columns">
+      <img src="./Foundation CheatSheet_files/hero-image.svg">
+    </div>
+  </div>
+  <!--row for defalut colors-->
+  <div class="row">
+     <div class="small-12 columns">
+             <h3>Default colors</h3>
+     </div>
+       <div class="small-12 columns content">
+        <ul class="small-block-grid-3 large-block-grid-6">
+          <li class="primary-color">Primary
+            <br>#2ba6cb
+          </li>
+          <li class="secondary-color">Secondary
+            <br>#e9e9e9</li>
+          <li class="alert-color">Alert
+            <br>#f04124</li>
+          <li class="success-color">Success
+            <br>#43ac6a</li>
+          <li class="bodyfont-color">Body Font
+            <br>#222222</li>
+          <li class="headerfont-color">Header Font
+            <br>#222222</li>
+        </ul>
+        </div>
+      </div>
+    <!--Strucure panel row-->
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Structure</h3>
+    </div>
+    <div class="small-12 columns content structure-panel">
+      <div class="small-12 columns">
+        <h4>Media Queries</h4>
+        <div class="small-12 medium-6 large-4 columns">
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k0" title=""> @media only screen { }</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1" title=""> @media only screen and (max-width: 40em) { }</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2" title=""> @media only screen and (min-width: 40.063em) { }</span>
+            </li>
+            <li class="show-for-medium-only"><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3" title=""> @media only screen and (min-width: 90.063em) { }</span>
+            </li>
+            <li class="show-for-medium-only"><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k4" title="">@media only screen and (min-width: 90.063em) and (max-width: 120em) { } </span>
+            </li>
+          </ul>
+        </div>
+        <div class="small-12 medium-6 large-4 columns">
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k5" title=""> @media only screen and (min-width: 40.063em) and (max-width: 64em) { }</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k6" title=""> @media only screen and (min-width: 64.063em) { }</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k7" title=""> @media only screen and (min-width: 64.063em) and (max-width: 90em) { } </span>
+            </li>
+            <li class="show-for-medium-only"><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k8" title=""> @media only screen and (min-width: 120.063em) { }</span>
+            </li>
+          </ul>
+        </div>
+        <div class="small-12 large-4 columns hide-for-medium-only">
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k9" title=""> @media only screen and (min-width: 90.063em) { }</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4ka" title="">@media only screen and (min-width: 90.063em) and (max-width: 120em) { } </span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kb" title=""> @media only screen and (min-width: 120.063em) { }</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+        <div class="small-12 medium-4 columns">
+          <h4>Basic</h4>
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kc" title="">div class="small-6 columns" </span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kd" title="">div class="small-6 large-3 columns" </span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4ke" title="">div class="small-6 medium-4 large-1 columns" </span>
+            </li>
+          </ul>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <h4>Offsets</h4>
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kf" title="">div class="small-10 small-offset-2 medium-6 columns"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kg" title="">div class="small-7 small-offset-5 medium-6 medium-offset-3 large-10 large-offset-2 columns"</span>
+            </li>
+          </ul>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <h4>Incomplete Rows</h4>
+          <p>your row doesn't have a count that adds up to 12 columns, you can add class <code>end</code> to ovveride default behaviour of last column floating to right</p>
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kh" title="">div class="row"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4ki" title="">div class="medium-3 columns"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kj" title="">div class="medium-3 columns end"</span>
+            </li>
+          </ul>
+
+        </div>
+        <div class="small-12 medium-4 columns">
+          <h4>Centered Columns</h4>
+
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kk" title="">div class="small-10 small-centered columns"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kl" title="">div class="small-10 large-centered columns"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4km" title="">div class="small-9 small-centered large-uncentered columns"</span>
+            </li>
+          </ul>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <h4>Source Rendering</h4>
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kn" title="">div class="large-9 large-push-3 columns"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4ko" title="">div class="medium-6 medium-push-6 columns"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kp" title="">small-5 small-push-7 medium-7 medium-push-5 columns</span>
+            </li>
+          </ul>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <h4>Block Grid</h4>
+          <p>Evenly split the contents of a list within the grid</p>
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kq" title="">ul class="small-block-grid-2"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kr" title="">ul class="small-block-grid-2 large-block-grid-4"</span>
+            </li>
+          </ul>
+        </div>
+
+     
+
+    </div>
+  </div>
+  <!--visibility classes-->
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Visibilty Classes</h3>
+    </div>
+    <div class="small-12 columns content visibilty-panel">
+      <div class="small-12 medium-6 large-3 columns">
+        <h4>Show Classes</h4>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4ks" title="">class="show-for-small-only"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kt" title="">class="show-for-medium-up"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4ku" title="">class="show-for-medium-only"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kv" title="">class="show-for-large-down"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kw" title="">class="show-for-large"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kx" title="">class="show-for-large-up"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4ky" title="">class="show-for-xlarge"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4kz" title="">class="show-for-xxlarge"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="small-12 medium-6 large-3 columns">
+        <h4>Hide Classes</h4> 
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k10" title="">class="hide-for-small-only"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k11" title="">class="hide-for-medium-up"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k12" title="">class="hide-for-medium-only"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k13" title="">class="hide-for-large-down"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k14" title="">class="hide-for-large"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k15" title="">class="hide-for-large-up"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k16" title="">class="hide-for-xlarge"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k17" title="">class="hide-for-xxlarge"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="small-12 medium-6 large-3 columns">
+        <h4>Orientation Detection</h4>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k18" title="">class="show-for-landscape"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k19" title="">class="show-for-portrait"</span>
+          </li>
+        </ul>
+        <h4>Touch Detection</h4>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1a" title="">class="show-for-touch"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1b" title="">class="hide-for-touch"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="small-12 medium-6 large-3 columns">
+        <h4>Accessibility</h4>
+        <p>If you want to hide some content but still make it accessible for screen readers, use the hidden visibility classes.To reverse the rules defined by hidden, use the visible visibility classes.</p>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1c" title="">class="hidden-for-small-only"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1d" title="">class="visible-for-small-only"</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!--Buttons panel-->
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Buttons</h3>
+    </div>
+    <div class="small-12 columns content button-panel">
+     <!--basic buttons-->
+      <div class="small-12 columns">
+      <h4>Basic</h4>
+      <div class="small-12 large-6 columns sub-content">
+
+        <div class="small-6 columns">
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button tiny">Tiny Button</a>
+          <p>a class="button tiny"</p>
+        </div>
+        <div class="small-6 columns">
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button small">Small Button</a>
+          <p>a class="button small"</p>
+        </div>
+
+
+        <div class="small-6 columns">
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button">Default Button</a>
+          <p>a class="button"</p>
+        </div>
+        <div class="small-6 columns">
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button large">Large Button</a>
+          <p>a class="button large"</p>
+        </div>
+
+
+        <div class="small-12 columns">
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button expand">Expanded Button</a>
+          <p>a class="button expand"</p>
+        </div>
+
+      </div>
+      <div class="small-12 large-6 columns sub-content">
+
+
+        <div class="small-6 columns ">
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button alert">Alert Button</a>
+          <p>a class="button alert"</p>
+        </div>
+        <div class="small-6 columns">
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button success">Success Button</a>
+          <p>a class="button success"</p>
+        </div>
+        <div class="small-6 columns">
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button disabled">Disabled Button</a>
+          <p>a class="button disabled"</p>
+        </div>
+        <div class="small-6 columns">
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button secondary">Secondary Button</a>
+          <p>a class="button secondary"</p>
+        </div>
+
+
+        <div class="small-6 columns">
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button radius">Radius Button</a>
+          <p>a class="button radius"</p>
+        </div>
+        <div class="small-6 columns">
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button round">Round Button</a>
+          <p>a class="button round"</p>
+        </div>
+      </div>
+      </div>
+      <!--Button groups-->
+        <div class="small-12 medium-6 large-6 columns">
+        <h4>Button Groups</h4>
+          <div class="small-12  columns sub-content">
+            
+            <ul class="button-group">
+              <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button">Button 1</a>
+              </li>
+              <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button">Button 2</a>
+              </li>
+
+            </ul>
+            <ul class="no-bullet">
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1e" title="">ul class="button-group"</span>
+              </li>
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1f" title="">li a class="button"</span>
+              </li>
+            </ul>
+          </div>
+          <div class="clear">
+            <h4>Button Bars</h4>
+          </div>
+          <div class="small-12  columns sub-content">
+            
+            <div class="button-bar">
+              <ul class="button-group">
+                <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="small button">Button 1</a>
+                </li>
+                <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="small button">Button 2</a>
+                </li>
+              </ul>
+              <ul class="button-group">
+                <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="small button">Button 1</a>
+                </li>
+                <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="small button">Button 2</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="no-bullet">
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1g" title="">div class="button-bar"</span>
+              </li>
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1h" title="">ul class="button-group"</span>
+              </li>
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1i" title="">li a class="button"</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+   <!--split buttons-->
+        <div class="small-12 medium-6 large-6 columns">
+         <h4>Split Buttons</h4>
+          <div class="small-12 columns sub-content">
+           
+            <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button split">Split Button <span data-dropdown="drop"></span></a>
+            <br>
+            <ul id="drop" class="f-dropdown" data-dropdown-content="">
+              <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">This is a link</a>
+              </li>
+              <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">This is another</a>
+              </li>
+              <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Yet another</a>
+              </li>
+            </ul>
+            <ul class="no-bullet">
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1j" title="">a href="#" class="button split" span data-dropdown="drop"&gt;../span../a../br</span>
+              </li>
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1k" title="">ul id="drop" class="f-dropdown" data-dropdown-content</span>
+              </li>
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1l" title="">li a href="#"</span>
+              </li>
+            </ul>
+
+          </div>
+          <!--dropdown-->
+          <div class="clear">
+            <h4>Dropdown</h4>
+          </div>
+          <div class="small-12  columns sub-content">
+          
+            <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" data-dropdown="drop1" class="button dropdown">Dropdown Button</a>
+            <br>
+            <ul id="drop1" data-dropdown-content="" class="f-dropdown">
+              <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">This is a link</a>
+              </li>
+              <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">This is another</a>
+              </li>
+              <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Yet another</a>
+              </li>
+            </ul>
+            <ul class="no-bullet">
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1m" title="">a href="#" data-dropdown="drop1" class="button dropdown" ../br</span>
+              </li>
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1n" title="">ul id="drop1" data-dropdown-content class="f-dropdown"</span>
+              </li>
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1o" title="">li a href="#"</span>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      
+      </div>
+    
+  </div>
+  
+  <!--Utility classes-->
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Utility Classes</h3>
+    </div>
+    <div class="small-12 columns content textAlignPanel">
+      <div class="medium-4 columns">
+        <h4>Float Classes</h4>
+        <p>You can change the float behavior of an element by adding <code>.left</code> or <code>.right</code> to an HTML element. To clear floats, add the class <code>.clearfix</code> to the parent element.</p>
+        <div class="clearfix">
+          <a class="button right">Float Right</a>
+          <a class="button left">Float Left</a>
+        </div>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1p" title="">div class="clearfix"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1q" title="">a class="button right"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1r" title="">a class="button left"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-4 columns">
+        <h4>Radius and Rounded</h4>
+        <p>The <code>.radius</code> and <code>.round</code> classes allow you to easily apply a border-radius to a UI-element. Adding the class to a button group will apply the border radius only to the outside corners.</p>
+        <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button small round">Round Button</a>
+        <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button small radius">Radius Button</a>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1s" title="">class="button round"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1t" title="">a class="button radius"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-4 columns">
+        <h4>Text Align Classes</h4>
+        <p>You can change the text alignment of an element by adding <code>.text-left</code>, <code>.text-right</code>, <code>.text-center</code> or <code>.text-justify</code> to an element.</p>
+        <p class="text-left">This text is left aligned</p>
+        <p class="text-right">This text is right aligned</p>
+        <p class="text-center">This text is center aligned</p>
+        <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="textClasses" data-reveal-id="textClasses">More text alignment classes</a>
+
+        <div id="textClasses" class="reveal-modal" data-reveal="">
+          <table style="width:100%;">
+            <tbody>
+              <tr>
+                <td><code>.text-left</code>
+                </td>
+                <td><code>.text-right</code>
+                </td>
+                <td><code>.text-center</code>
+                </td>
+                <td><code>.text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.small-text-left</code>
+                </td>
+                <td><code>.small-text-right</code>
+                </td>
+                <td><code>.small-text-center</code>
+                </td>
+                <td><code>.small-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.small-only-text-left</code>
+                </td>
+                <td><code>.small-only-text-right</code>
+                </td>
+                <td><code>.small-only-text-center</code>
+                </td>
+                <td><code>.small-only-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.medium-text-left</code>
+                </td>
+                <td><code>.medium-text-right</code>
+                </td>
+                <td><code>.medium-text-center</code>
+                </td>
+                <td><code>.medium-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.medium-only-text-left</code>
+                </td>
+                <td><code>.medium-only-text-right</code>
+                </td>
+                <td><code>.medium-only-text-center</code>
+                </td>
+                <td><code>.medium-only-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.large-text-left</code>
+                </td>
+                <td><code>.large-text-right</code>
+                </td>
+                <td><code>.large-text-center</code>
+                </td>
+                <td><code>.large-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.large-only-text-left</code>
+                </td>
+                <td><code>.large-only-text-right</code>
+                </td>
+                <td><code>.large-only-text-center</code>
+                </td>
+                <td><code>.large-only-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.xlarge-text-left</code>
+                </td>
+                <td><code>.xlarge-text-right</code>
+                </td>
+                <td><code>.xlarge-text-center</code>
+                </td>
+                <td><code>.xlarge-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.xlarge-only-text-left</code>
+                </td>
+                <td><code>.xlarge-only-text-right</code>
+                </td>
+                <td><code>.xlarge-only-text-center</code>
+                </td>
+                <td><code>.xlarge-only-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.xxlarge-text-left</code>
+                </td>
+                <td><code>.xxlarge-text-right</code>
+                </td>
+                <td><code>.xxlarge-text-center</code>
+                </td>
+                <td><code>.xxlarge-text-justify</code>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td>Align Left</td>
+                <td>Align Right</td>
+                <td>Align Center</td>
+                <td>Justify</td>
+              </tr>
+            </thead>
+          </table>
+          <a class="close-reveal-modal">×</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--forms-->
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Forms</h3>
+    </div>
+    <div class="small-12 columns content">
+
+      <div class="medium-12 large-8 columns forms">
+        <h4>Input Forms</h4>
+        <div class="small-12 medium-6 columns ">
+          <div class="row">
+            <div class="small-3 columns">
+              <label for="right-label" class="right inline">Label</label>
+            </div>
+            <div class="small-9 columns">
+              <input type="text" id="right-label" placeholder="Inline Text Input">
+            </div>
+          </div>
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1u" title="">div class="small-3 columns"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1v" title="">label for="right-label" class="right inline"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1w" title="">div class="small-9 columns</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1x" title="">input type="text" id="right-label" placeholder="Inline Text Input"</span>
+            </li>
+          </ul>
+
+        </div>
+        <div class="small-12 medium-6 columns">
+
+          <div class="row collapse">
+            <div class="small-10 columns">
+              <input type="text" placeholder="Hex Value">
+            </div>
+            <div class="small-2 columns">
+              <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="button postfix">Go</a>
+            </div>
+          </div>
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1y" title=""> div class="row collapse"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k1z" title=""> div class="small-10 columns"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k20" title="">input type="text" placeholder="Hex Value"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k21" title=""> div class="small-2 columns"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k22" title="">  a href="#" class="button postfix"</span>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <h4>Switches</h4>
+        <div class="small-6 columns">
+          <div class="switch">
+            <input id="exampleCheckboxSwitch" type="checkbox">
+            <label for="exampleCheckboxSwitch"></label>
+          </div>
+        </div>
+        <div class="small-6 columns">
+          <div class="switch round">
+            <input id="exampleCheckboxSwitchRound" type="checkbox">
+            <label for="exampleCheckboxSwitchRound"></label>
+          </div>
+        </div>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k23" title="">div class="switch"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k24" title="">input id="exampleCheckboxSwitch" type="checkbox"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k25" title="">label for="exampleCheckboxSwitch"</span>
+          </li>
+        </ul>
+
+
+      </div>
+      <div class="medium-12 large-8 columns forms">
+        <h4>Error States</h4>
+        <div class="row">
+          <div class="small-12 medium-6 columns">
+            <input type="text" class="error">
+            <small class="error">Invalid entry</small>
+            <ul class="no-bullet">
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k26" title="">label class="error"</span>
+              </li>
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k27" title=""> input type="text" class="error"</span>
+              </li>
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k28" title="">small class="error"</span>
+              </li>
+            </ul>
+
+          </div>
+          <div class="small-12 medium-6 columns">
+            <textarea class="error" placeholder="Message..."></textarea>
+            <small class="error">Invalid entry</small>
+            <ul class="no-bullet">
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k29" title="">textarea class="error" placeholder="Message..."</span>
+              </li>
+              <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2a" title=""> small class="error"</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <h4>Sliders</h4>
+        <div class="range-slider" data-slider="50">
+          <span class="range-slider-handle" role="slider" tabindex="0" style="transform: translateX(149px);"></span>
+          <span class="range-slider-active-segment" style="width: 50%;"></span>
+          <input type="hidden" value="50">
+        </div>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2b" title="">div class="range-slider" data-slider</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2c" title="">span class="range-slider-handle" role="slider"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2d" title="">span class="range-slider-active-segment"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2e" title="">input type="hidden"</span>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+  
+    <!--Typography-->
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Typography</h3>
+    </div>
+    <div class="small-12 columns content typography-panel">
+      <div class="medium-4 large-3 columns typography">
+        <h4 class="block">Headers</h4>
+        <h1><span>h1.</span></h1>
+        <h2><span>h2.</span></h2>
+        <h3 class="defaultH3"><span>h3.</span></h3>
+        <h4 class="defaultH4"><span>h4.</span></h4>
+        <h5><span>h5.</span></h5>
+        <h6><span>h6.</span></h6>
+        <h4 class="block">Sub Headers</h4>
+        <h1 class="subheader"><span>h1.</span></h1>
+        <h2 class="subheader"><span>h2.</span></h2>
+        <h3 class="subheader defaultH3"><span>h3.</span></h3>
+        <h4 class="subheader defaultH4"><span>h4.</span></h4>
+        <h5 class="subheader"><span>h5.</span></h5>
+        <h6 class="subheader"><span>h6.</span></h6>
+        <h4 class="block heading">Small Header Segments</h4>
+        <h1><small>h1.</small></h1>
+        <h2><small>h2.</small></h2>
+        <h3 class="defaultH3"><small>h3.</small></h3>
+        <h4 class="defaultH4"><small>h4.</small></h4>
+        <h5><small>h5.</small></h5>
+        <h6><small>h6</small></h6>
+      </div>
+      <div class="medium-4 large-3 columns">
+        <h4>List items</h4>
+        <ul class="no-bullet">
+          <li>Unordered list</li>
+          <ul class="circle">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2f" title="">circle as bullet -div class="circle"</span>
+            </li>
+          </ul>
+          <ul class="disc">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2g" title="">disc as bullet -div class="disc"</span>
+            </li>
+          </ul>
+          <ul class="square">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2h" title="">sqaure as bullet -div class="square"</span>
+            </li>
+          </ul>
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2i" title="">no bullet -div class="no-bullet"</span>
+            </li>
+          </ul>
+        </ul>
+        
+        <ul class="no-bullet">
+          <li>Ordered list</li>
+          <ol>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2j" title="">this is an ordered list</span>
+            </li>
+          </ol>
+        </ul>
+        <h4>keystroke</h4>
+        <p>For example, to close your browser hit <kbd>Cmd</kbd>+<kbd>Q</kbd>
+          </p><pre><code class="language-html keystroke-code"><div class="code-container"><span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">kbd</span>&gt;</span>Cmd<span class="tag">&lt;/<span class="title">kbd</span>&gt;</span>+<span class="tag">&lt;<span class="title">kbd</span>&gt;</span>Q<span class="tag">&lt;/<span class="title">kbd</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></div></code></pre>
+        <p></p>
+      </div>
+
+      <div class="medium-4 large-3 columns">
+        <h4>V-Card</h4>
+        <ul class="vcard">
+          <li class="fn">first name</li>
+          <li class="street-address">street address.</li>
+          <li class="locality">locality</li>
+          <li><span class="state">state</span>, <span class="zip">12345</span>
+          </li>
+          <li class="email"><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">email@example.com</a>
+          </li>
+        </ul>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2k" title="">ul class="vcard"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2l" title="">li class="fn"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2m" title="">li class="street-address"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2n" title="">li class="locality"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2o" title="">li span class="state"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2p" title="">li span class="zip"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2q" title="">li class="email"</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="medium-4 large-3 clearMedium columns">
+        <div class="small-12 columns">
+          <h4>Blockquotes</h4>
+          <p>blockquote QUOTE cite AUTHOR /cite /blockquote</p>
+          <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite>
+            
+        </blockquote></div>
+        <div class="small-12 columns">
+          <h4>Description List</h4>
+          <span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2r" title="">dl..dt..dd</span>
+          <dl>
+            <dt>Definition Title</dt>
+            <dd>Definition Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh .</dd>
+          </dl>
+        </div>
+      </div>
+
+
+      <div class="medium-8 columns">
+        <h4>Labels</h4>
+        <div class="small-6 large-4 columns">
+          <span class="label">Regular Label</span>
+          <p>class="label"</p>
+        </div>
+        <div class="small-6 large-4  columns">
+          <span class="radius secondary label">Radius Secondary Label</span>
+          <p>class="radius secondary label"</p>
+        </div>
+        <div class="small-6 large-4 columns">
+          <span class="round alert label">Round Alert Label</span>
+          <p>class="round alert label"</p>
+        </div>
+        <div class="small-6 large-4  columns">
+          <span class="warning label">Warning Label</span>
+          <p>class="warning label"</p>
+        </div>
+        <div class="small-6 large-4 end columns">
+          <span class="success label">Success Label</span>
+          <p>class="success label"</p>
+        </div>
+      </div>
+
+      <div class="medium-8 large-4 columns">
+        <h4>Inlinelist</h4>
+        <ul class="inline-list">
+          <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Link 1</a>
+          </li>
+          <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Link 2</a>
+          </li>
+          <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Link 3</a>
+          </li>
+          <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Link 4</a>
+          </li>
+          <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Link 5</a>
+          </li>
+        </ul>
+        <span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2s" title="">ul class="inline-list"</span>
+      </div>
+
+
+    </div>
+  </div>
+  
+    <!--Navigation-->
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Navigation</h3>
+    </div>
+    <div class="small-12 columns content">
+      <div class="medium-6 large-3 columns">
+        <h4>Pagnition</h4>
+        <ul class="pagination">
+          <li class="arrow unavailable"><a href="http://sudheerdev.github.io/Foundation5CheatSheet/">«</a>
+          </li>
+          <li class="current"><a href="http://sudheerdev.github.io/Foundation5CheatSheet/">1</a>
+          </li>
+          <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/">2</a>
+          </li>
+          <li class="unavailable"><a href="http://sudheerdev.github.io/Foundation5CheatSheet/">…</a>
+          </li>
+          <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/">12</a>
+          </li>
+          <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/">13</a>
+          </li>
+          <li class="arrow"><a href="http://sudheerdev.github.io/Foundation5CheatSheet/">»</a>
+          </li>
+        </ul>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2t" title="">ul class="pagination"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2u" title="">li class="arrow unavailable" </span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2v" title="">li class="current" </span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2w" title="">li class="unavailable" </span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2x" title="">li class="arrow"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-6 large-4 columns">
+        <h4> Sub-Nav</h4>
+        <dl class="sub-nav">
+          <dt>Filter:</dt>
+          <dd class="active"><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">All</a>
+          </dd>
+          <dd><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Active</a>
+          </dd>
+          <dd><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Pending</a>
+          </dd>
+        </dl>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2y" title="">dl class="sub-nav" </span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k2z" title="">dt</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k30" title="">dd class="active" a href=""</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k31" title="">dd a href=""</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-6 large-5 clearMedium columns">
+        <h4>Icon Bars</h4>
+        <div class="icon-bar five-up">
+          <a class="item">
+            <img src="./Foundation CheatSheet_files/fi-home.svg">
+            <label>Home</label>
+          </a>
+          <a class="item">
+            <img src="./Foundation CheatSheet_files/fi-bookmark.svg">
+            <label>Bookmark</label>
+          </a>
+          <a class="item">
+            <img src="./Foundation CheatSheet_files/fi-info.svg">
+            <label>Info</label>
+          </a>
+          <a class="item">
+            <img src="./Foundation CheatSheet_files/fi-mail.svg">
+            <label>Mail</label>
+          </a>
+          <a class="item">
+            <img src="./Foundation CheatSheet_files/fi-like.svg">
+            <label>Like</label>
+          </a>
+        </div>
+        <p>Specifying the number of items <code>one-up</code> through <code>six-up</code> will ensure the items are evenly spaced.</p>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k32" title="">div class="icon-bar five-up"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k33" title="">a class="item" </span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k34" title="">img src=""</span>
+          </li>
+        </ul>
+
+      </div>
+      <div class="medium-6 large-4 clearLarge columns">
+        <h4>Breadcrumbs</h4>
+        <ul class="breadcrumbs">
+          <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Home</a>
+          </li>
+          <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Features</a>
+          </li>
+          <li class="unavailable"><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Gene Splicing</a>
+          </li>
+          <li class="current"><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Cloning</a>
+          </li>
+        </ul>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k35" title="">ul class="breadcrumbs"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k36" title="">li class="unavailable"  </span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k37" title="">li class="current"</span>
+          </li>
+        </ul>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k38" title="">nav class="breadcrumbs"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k39" title="">a class="unavailable"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3a" title="">a class="current"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-6 large-4 clearMedium sideNav columns">
+        <h4>Side Nav</h4>
+        <div class="small-4 columns">
+          <ul class="side-nav">
+            <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Link 1</a>
+            </li>
+            <li class="active"><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Link 2</a>
+            </li>
+            <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Link 3</a>
+            </li>
+            <li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <div class="small-8 columns">
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3b" title="">ul class="side-nav" </span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3c" title="">li class="active"  </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="medium-6 large-4 columns">
+        <h4>Top-Bar</h4>
+        <nav class="top-bar hide-for-print">
+          <ul class="title-area">
+            <li class="name"></li>
+            <li class="toggle-topbar menu-icon">
+              <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">
+                <span>Menu</span>
+              </a>
+            </li>
+          </ul>
+          <section class="top-bar-section">
+            <ul class="left">
+              <li class="active">
+                <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Main Item 1</a>
+              </li>
+              <li>
+                <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Main Item 2</a>
+              </li>
+            </ul>
+          </section>
+        </nav>
+
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3d" title="">nav class="top-bar"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3e" title="">ul class="title-area" </span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3f" title="">li class="name" </span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3g" title="">li class="toggle-topbar menu-icon ... a span Menu" </span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3h" title="">section class="top-bar-section"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3i" title="">ul class="left" </span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3j" title="">li class="active" </span>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+  
+  <!--Media-->
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Media</h3>
+    </div>
+    <div class="small-12 columns content">
+      <div class="medium-6 columns">
+        <h4>Flex Video</h4>
+
+        <div class="flex-video">
+          <iframe width="420" height="315" src="./Foundation CheatSheet_files/aiBt44rrslw.html" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3k" title="">div class="flex-video"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3l" title="">iframe width="420" height="315" src="//www..com/embed/aiBt44rrslw" frameborder="0" allowfullscreen</span>
+          </li>
+        </ul>
+
+      </div>
+      <div class="medium-6 columns">
+        <h4>Thumbnails</h4>
+        <div class="small-4 columns thumbMargin">
+          <a class="th" href="http://sudheerdev.github.io/Foundation5CheatSheet/img/space.jpg">
+            <img src="./Foundation CheatSheet_files/space-th-sm.jpg">
+          </a>
+        </div>
+        <div class="small-8 columns">
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3m" title="">a class="th" href="path/to/your/img"</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3n" title="">img src="path/to/your/img-th"</span>
+            </li>
+          </ul>
+        </div>
+      <div class="clear">    
+      <h4>Clearing Lightbox</h4>
+      </div>
+        <div class="small-12 columns">
+         <div class="clearing-assembled"><div><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="clearing-close">×</a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><p class="clearing-caption"></p><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="clearing-main-prev"><span></span></a><a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="clearing-main-next"><span></span></a></div><div class="carousel"><ul class="clearing-thumbs" data-clearing="">
+            <li>
+              <a class="th" href="http://sudheerdev.github.io/Foundation5CheatSheet/img/comet.jpg">
+                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="./Foundation CheatSheet_files/comet-th-sm.jpg">
+              </a>
+            </li>
+            <li>
+              <a class="th" href="http://sudheerdev.github.io/Foundation5CheatSheet/img/earth.jpg">
+                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="./Foundation CheatSheet_files/earth-th-sm.jpg">
+              </a>
+            </li>
+            <li>
+              <a class="th" href="http://sudheerdev.github.io/Foundation5CheatSheet/img/launch.jpg">
+                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="./Foundation CheatSheet_files/launch-th-sm.jpg">              </a>
+            </li>
+            <li>
+              <a class="th" href="http://sudheerdev.github.io/Foundation5CheatSheet/img/satelite.jpg">
+                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="./Foundation CheatSheet_files/satelite-th-sm.jpg">
+              </a>
+            </li>
+          </ul></div></div></div>
+          <ul class="no-bullet">
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3o" title="">ul class="clearing-thumbs" data-clearing</span>
+            </li>
+            <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3p" title="">li..a href="path/to/your/img"..img src="path/to/your/img-th"../a&gt;../li</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  
+  <!--Callouts-->
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Callouts</h3>
+    </div>
+    <div class="small-12 columns content">
+
+      <div class="medium-6 large-3 columns">
+        <h4>Alerts</h4>
+        <div data-alert="" class="alert-box">
+          This is a standard alert box
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="close">×</a>
+        </div>
+        <div data-alert="" class="alert-box success radius">
+          This is a success alert with a radius.
+          <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" class="close">×</a>
+        </div>
+        <p>Alert boxes take 100% width and you can add .radius, .success, .alert, .round, .secondary or .close to create close box</p>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3q" title="">div data-alert class="alert-box"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3r" title="">a href="#" class="close"</span>
+          </li>
+        </ul>
+
+      </div>
+      <div class="medium-6 large-3 columns">
+        <h4>Panels</h4>
+        <div class="panel">
+          <h5>This is a regular panel.</h5>
+        </div>
+        <span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3s" title="">div class="panel"</span>
+        <div class="panel callout radius">
+          <h5>This is a callout panel.</h5>
+        </div>
+        <span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3t" title="">div class="panel callout radius"</span> 
+      </div>
+      <div class="medium-6 large-3 columns toolTips clearMedium">
+        <h4>Tooltips</h4>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3u" title="">Default Tool-tip</span><span>class='has-tip'</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip tip-top" data-selector="tooltip-ioqcez4k3v" title="">Top Tool-tip  </span><span>class='has-tip tip-top'</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip tip-left" data-selector="tooltip-ioqcez4k3w" title="">left Tool-tip </span><span>class='has-tip tip-left'</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip tip-right" data-selector="tooltip-ioqcez4k3x" title="">right Tool-tip</span><span>class='has-tip tip-right'</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-6 large-3 columns">
+        <h4>Reveal Modal</h4>
+        <a href="http://sudheerdev.github.io/Foundation5CheatSheet/#" data-reveal-id="myModal">Click Me For A Modal</a>
+
+        <div id="myModal" class="reveal-modal" data-reveal="">
+          <h2>Awesome. I have it.</h2>
+          <p class="lead">Your couch. It is mine.</p>
+          <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+          <a class="close-reveal-modal">×</a>
+        </div>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3y" title="">a href="#" data-reveal-id="myModal"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k3z" title="">div id="myModal" class="reveal-modal" data-reveal </span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k40" title=""> a class="close-reveal-modal" &gt;×</span>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+ <!--content-->
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Content</h3>
+    </div>
+    <div class="small-12 columns content">
+      <div class="medium-6 large-3 columns">
+        <h4>Pricing Tables</h4>
+        <ul class="pricing-table">
+          <li class="title">Standard</li>
+          <li class="price">$99.99</li>
+          <li class="description">An awesome description</li>
+          <li class="bullet-item">1 Database</li>
+          <li class="cta-button"><a class="button" href="http://sudheerdev.github.io/Foundation5CheatSheet/#">Buy Now</a>
+          </li>
+        </ul>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k41" title="">ul class="pricing-table"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k42" title="">li class="title"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k43" title="">li class="price"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k44" title="">li class="description"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k45" title="">li class="bullet-item"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k46" title="">li class="cta-button"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-6 large-3 columns">
+        <h4>Progress Bars</h4>
+        <div class="progress">
+          <span class="meter"></span>
+        </div>
+        <div class="progress success round">
+          <span class="meter halfWidth"></span>
+        </div>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k47" title="">div class="progress"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k48" title="">span class="meter" style="width: [1 - 100]%"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-6 large-3 clearMedium columns">
+        <h4>Tables</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Table Header</th>
+              <th>Table Header</th>
+              <th>Table Header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer content Donec id elit non .</td>
+              <td>Content Goes Here</td>
+            </tr>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer Content Goes Here Donec id .</td>
+              <td>Content Goes Here</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k49" title="">table thead tr th tbody tr td</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-6 large-3 columns">
+        <h4>Data Equalizer</h4>
+        <div class="row" data-equalizer="">
+          <div class="medium-6 columns">
+            <div class="panel" data-equalizer-watch="" style="height: 291px;">
+
+              <p>Pellentesque habitant morbi ultricies eget, tempor sit amet</p>
+            </div>
+          </div>
+          <div class="medium-6 columns">
+            <div class="callout panel" data-equalizer-watch="" style="height: 291px;">
+
+              <ul class="no-bullet">
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                <li>Aliquam tincidunt mauris eu risus.</li>
+
+              </ul>
+
+            </div>
+
+
+          </div>
+        </div>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k4a" title="">div class="row" data-equalizer</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" data-selector="tooltip-ioqcez4k4b" title="">div data-equalizer-watch</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>JavaScript</h3>
+    </div>
+    <div class="small-12 columns content">
+      <div class="medium-4 columns">
+        <ul class="no-bullet">
+          <li><a href="http://foundation.zurb.com/docs/components/kitchen_sink.html" target="_blank">Kitchen sink</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/interchange.html" target="_blank">Interchange</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/offcanvas.html" target="_blank">Off Canvas</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/magellan.html" target="_blank">Magellan</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="medium-4 columns">
+        <ul class="no-bullet">
+          <li><a href="http://foundation.zurb.com/docs/components/orbit.html" target="_blank">Orbit</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/joyride.html" target="_blank">Joyride</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/abide.html" target="_blank">Abide Validation</a>
+          </li>
+
+
+        </ul>
+      </div>
+      <div class="medium-4 columns">
+        <ul class="no-bullet">
+          <li><a href="http://foundation.zurb.com/docs/components/dropdown.html" target="_blank">Dropdowns</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/accordion.html" target="_blank">Accordion</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/tabs.html" target="_blank">Tabs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <div class="footer fullwidth text-center">
+    <h4>Cheat sheet created by Sudheer</h4>
+  </div>
+  
+  <script src="./Foundation CheatSheet_files/jquery.js"></script>
+  <script src="./Foundation CheatSheet_files/foundation.min.js"></script>
+  <script src="./Foundation CheatSheet_files/foundation.clearing.js"></script>
+  
+  <script>
+    $(document).foundation();
+  </script><span data-selector="tooltip-ioqcez4k0" class="tooltip">mobile styles<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1" class="tooltip">max-width 640px, mobile-only styles, use when QAing mobile issues<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2" class="tooltip">min-width 641px, medium screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3" class="tooltip">min-width 1441px, xlarge screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k4" class="tooltip">min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k5" class="tooltip">min-width 641px and max-width 1024px, use when QAing tablet-only issues<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k6" class="tooltip">min-width 1025px, large screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k7" class="tooltip">min-width 1025px and max-width 1440px, use when QAing large screen-only issues<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k8" class="tooltip">min-width 1921px, xxlarge screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k9" class="tooltip">min-width 1441px, xlarge screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4ka" class="tooltip">min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kb" class="tooltip">min-width 1921px, xxlarge screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kc" class="tooltip">6-columns on all screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kd" class="tooltip">6-columns on small and 3-columns on large screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4ke" class="tooltip">6-columns on small, 4-columns on medium screens and 3-columns on large screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kf" class="tooltip">2-column offset on all screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kg" class="tooltip">5-column offset on small, 3-column offset on medium and 2-column offset on large screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kh" class="tooltip">new row<span class="nub"></span></span><span data-selector="tooltip-ioqcez4ki" class="tooltip">medium-3 columns<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kj" class="tooltip">stacks next to previous previous column<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kk" class="tooltip">10-columns centered on all screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kl" class="tooltip">10-columns centered on large screens only<span class="nub"></span></span><span data-selector="tooltip-ioqcez4km" class="tooltip">9-columns centered on small and medium screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kn" class="tooltip">push 3 columns on large screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4ko" class="tooltip">push 6 columns on medium screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kp" class="tooltip">push 7 columns on small screens,push 5 columns on medium screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kq" class="tooltip">2 evenly spaced columns on all screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kr" class="tooltip">2 evenly spaced columns on small screens and 4 evenly spaced columns on medium screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4ks" class="tooltip">shown only on a small screen<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kt" class="tooltip">shown on medium screens and up<span class="nub"></span></span><span data-selector="tooltip-ioqcez4ku" class="tooltip">shown only on a medium screen<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kv" class="tooltip">shown on large screens and up<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kw" class="tooltip">shown only on a large screen<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kx" class="tooltip">shown on xlarge screens and up<span class="nub"></span></span><span data-selector="tooltip-ioqcez4ky" class="tooltip">shown only on an xlarge screen<span class="nub"></span></span><span data-selector="tooltip-ioqcez4kz" class="tooltip">shown on xxlarge screens and up<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k10" class="tooltip">hide only on a small screen<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k11" class="tooltip">hide on medium screens and up<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k12" class="tooltip">hide only on a medium screen<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k13" class="tooltip">hide on large screens and up<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k14" class="tooltip">hide only on a large screen<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k15" class="tooltip">hide on xlarge screens and up<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k16" class="tooltip">hide only on an xlarge screen<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k17" class="tooltip">hide on xxlarge screens and up<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k18" class="tooltip">shown only in landscape mode<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k19" class="tooltip">shown only in portrait mode<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1a" class="tooltip">show on touch-enabled device<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1b" class="tooltip">hidden on touch-enabled deivice<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1c" class="tooltip">hidden on small screens but accessible on all screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1d" class="tooltip">visible on small screens but accessible on all screens<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1e" class="tooltip">use ul with class 'button-group'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1f" class="tooltip">li with class 'button'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1g" class="tooltip">apply class='button-bar' to div element<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1h" class="tooltip">use ul li structure for button groups with class='button-group'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1i" class="tooltip">apply class='button' for li emements<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1j" class="tooltip">have 'span' tag with data-dropdown as attribute inside 'a' tag along with 'br' at the end<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1k" class="tooltip">ul tag with class'f-dropdown' and 'id' given in the span tag<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1l" class="tooltip">list emements using 'li a'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1m" class="tooltip">apply data-dropdown attribute on 'a' tag with classes 'button dropdown and with 'br' tag at the end<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1n" class="tooltip">ul tag with class 'f-dropdown' and 'id' given in the a tag<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1o" class="tooltip">list emements using 'li a'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1p" class="tooltip">To clear floats<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1q" class="tooltip">To align right<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1r" class="tooltip">To align left<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1s" class="tooltip">border style-round<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1t" class="tooltip">border style-radius<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1u" class="tooltip">column for label<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1v" class="tooltip">label tag with class='right-inline'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1w" class="tooltip">column fot input<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1x" class="tooltip">input tag<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1y" class="tooltip">div with class 'row collpase'-remove padding<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k1z" class="tooltip">column for input<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k20" class="tooltip">input tag<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k21" class="tooltip">column for button<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k22" class="tooltip">button element<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k23" class="tooltip">div with class 'switch'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k24" class="tooltip">input tag with id and type='checkbox'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k25" class="tooltip">label with the above id<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k26" class="tooltip">label tag with class 'error'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k27" class="tooltip">input type with class='error'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k28" class="tooltip">error message<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k29" class="tooltip">textarea with class='error'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2a" class="tooltip">error message<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2b" class="tooltip">div tag with class='range-slider' and attribute data-slider<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2c" class="tooltip">span tag with class='range-slider-handle and role attribute'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2d" class="tooltip">span tag with class range-slider-active-segment<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2e" class="tooltip">hidden input type<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2f" class="tooltip">ul with class='circle'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2g" class="tooltip">ul with class='disc'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2h" class="tooltip">ul with class='square'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2i" class="tooltip">ul with class='no-bullet'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2j" class="tooltip">typical ol<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2k" class="tooltip">ul with class='vcard'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2l" class="tooltip">Name and surname<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2m" class="tooltip">Address<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2n" class="tooltip">Locality<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2o" class="tooltip">State<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2p" class="tooltip">Zip code<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2q" class="tooltip">Email:id<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2r" class="tooltip">Definition list tags<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2s" class="tooltip">ul list with class='inline-list'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2t" class="tooltip">ul list with class='pagination'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2u" class="tooltip">arrow unavailable class<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2v" class="tooltip">current class<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2w" class="tooltip">unavaible class for ellipsis in the middle.<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2x" class="tooltip">arrow class<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2y" class="tooltip">dl with class='sub-nav'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k2z" class="tooltip">dt for term<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k30" class="tooltip">dd with class='active' for active items<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k31" class="tooltip">dd with link<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k32" class="tooltip">Splits icon bar into 5 even columns<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k33" class="tooltip">link with class 'item'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k34" class="tooltip">image<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k35" class="tooltip">ul class with 'breadcrumbs'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k36" class="tooltip">Unavailable link<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k37" class="tooltip">Current link<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k38" class="tooltip">nav with class='breadcrumbs'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k39" class="tooltip">Unavailable link<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3a" class="tooltip">Current link<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3b" class="tooltip">ul with class='side-nav'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3c" class="tooltip">active link<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3d" class="tooltip">Nav with class='top-bar'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3e" class="tooltip">Title area<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3f" class="tooltip">Name<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3g" class="tooltip">Toggle class<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3h" class="tooltip">Contains left and right positioned menu items<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3i" class="tooltip">Left positioned element<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3j" class="tooltip">Active element<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3k" class="tooltip">flex-video div<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3l" class="tooltip">iframe with width,height and source<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3m" class="tooltip">a tag with link to original img<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3n" class="tooltip">image tag with link to thumbnail<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3o" class="tooltip">ul with class='clearing-thumbnail and data attribute: data-clearing'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3p" class="tooltip">list images with source to thumbnail and link to image<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3q" class="tooltip">div with class='alert-box' and data-attribute: data-alert<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3r" class="tooltip">close link<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3s" class="tooltip">div with class='panel'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3t" class="tooltip">With custom classes<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3u" class="tooltip">class='has-tip'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3v" class="tooltip tip-top">class='has-tip tip-top'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3w" class="tooltip tip-left">class='has-tip tip-left'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3x" class="tooltip tip-right">class='has-tip tip-right'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3y" class="tooltip">a tag with data attribute: data-reveal-id<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k3z" class="tooltip">div for modal with id given in the data attribute above<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k40" class="tooltip">close link for modal<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k41" class="tooltip">Unordered list with class ='pricing-table'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k42" class="tooltip">Title<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k43" class="tooltip">Price<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k44" class="tooltip">Description<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k45" class="tooltip">Items<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k46" class="tooltip">Call to action button<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k47" class="tooltip">div with class='progress'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k48" class="tooltip">span with class='meter'<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k49" class="tooltip">table tags<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k4a" class="tooltip">div with data attribute: data-equalizer<span class="nub"></span></span><span data-selector="tooltip-ioqcez4k4b" class="tooltip">Add data attribute: data-equalizer-watch to equalize columns<span class="nub"></span></span>
+
+
+
+</body></html>

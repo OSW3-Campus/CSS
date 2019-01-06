@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mickey</title>
+
+    <style>
+    html, body { height: 100%; position: relative; }
+
+    /**
+     * A vous de jouer 
+     * =================
+     * Ecrivez ici la feuille de style qui va nous permettre de dessiner 
+     * la silouhette de mickey. 
+     * La tete de Mickey doit être au centre du document. 
+     * Vous ne devez utiliser QUE la balise div du document
+     *
+     * Bonus, faite disparaitre la tête de la sourie au passage de la sourie :-D
+     */
+    
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -200px;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        background-color: black;
+
+        animation-name: changeColors;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+        opacity: 1;
+        -webkit-transition: all 2s;
+                transition: all 2s;
+    }
+
+    div::before ,
+    div::after {
+        content: "";
+        position: absolute;
+        top: -100px;
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+        background-color: black;
+        animation-name: changeColors2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    div::before {
+        left: -80px;
+    }
+    div::after {
+        right: -80px;
+    }
+    /* div:hover {
+        opacity: 0;
+        top: -300px;
+        transform: rotate(1500deg);
+        transform: scale(2, 0.5);
+    } */
+
+    @keyframes changeColors {
+        0% {
+            background-color: red;
+        }
+        50% {
+            background-color: green;
+        }
+        100% {
+            background-color: blue;
+        }
+    }
+    @keyframes changeColors2 {
+        0% {
+            background-color: red;
+        }
+        5% {
+            background-color:aqua;
+        }
+        10% {
+            background-color:chartreuse;
+        }
+        15% {
+            background-color:khaki;
+        }
+        20% {
+            background-color: red;
+        }
+        25% {
+            background-color:aqua;
+        }
+        30% {
+            background-color:chartreuse;
+        }
+        35% {
+            background-color:khaki;
+        }
+        50% {
+            background-color: green;
+        }
+        100% {
+            background-color: blue;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div></div>
+
+</body>
+</html>
